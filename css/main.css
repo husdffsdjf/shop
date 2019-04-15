@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #777;
+    font-size: 18px;
+}
+
+aside {
+    min-width: 250px;
+    padding: 1em;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+}
+
+label {
+    user-select: none;
+    cursor: pointer;
+}
+
+header {
+    background-color: #fefcf2;
+    border-bottom: 1px solid #ccc;
+    padding: 1px 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    align-self: center;
+}
+
+nav .button:not(:first-of-type) {
+    margin-left: 1em;
+}
+
+main {
+    display: flex;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+.text-input,
+.button,
+select {
+    height: 2em;
+    font-size: inherit;
+    color: inherit;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.text-input {
+    width: 100%;
+    margin: 0;
+    padding: 0.5em;
+}
+
+.button {
+    cursor: pointer;
+    margin: 1em 0;
+    padding: 0 1em;
+}
+
+select {
+    padding: 0 1em;
+}
+
+.button__submit {
+    background: #1d9166;
+    color: #fff;
+    border: none;
+}
+
+.button__err {
+    background: #e4274c;
+    color: #fff;
+    border: none;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2em;
+}
+
+strong {
+    font-weight: 700;
+    color: #000;
+}
+
+input[type=checkbox] {
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: bottom;
+    margin-right: 1em;
+}
+
+.separator {
+    margin-top: 1em;
+    border-bottom: 1px solid #ccc;
+}
+
+.add-to-cart, .remove-from-cart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3.7em;
+    height: 3.7em;
+    transform: translate(40%,-40%);
+    border: none;
+    border-radius: 50%;
+    background: #e4274c url('../img/addToCart.png') no-repeat 50% / 65%;
+    cursor: pointer;
+    transition: all linear 0.1s;
+}
+
+.remove-from-cart {
+    background-image: url('../img/removeFromCart.png');
+}
+
+.add-to-cart:hover,
+.remove-from-cart:hover {
+    transform: translate(40%,-40%) scale(1.1);
+}
+
+.goods {
+    position: relative;
+    width: 11em;
+    padding: 1em;
+    margin: 1em;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    transition: all linear 0.1s;
+    cursor: pointer;
+}
+
+.goods h3 {
+    margin: 0;
+    font-size: 1em;
+}
+
+.goods-content {
+    position: relative;
+    width: 11em;
+    height: 14em;
+    margin: 0.5em 0;
+}
+
+.goods .goods-preview {
+    max-width: 11em;
+    max-height: 14em;
+    display: block;
+    margin: 0 auto;
+}

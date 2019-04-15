@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Goods</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/goods.css">
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/goods.js" defer></script>
+    <script src="../js/navigation.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><strong>Shop / </strong>Товари</h1>
+        <nav>
+            <button id="toCart" class="button button__submit">Кошик</button>
+            <button id="out" class="button button__err">Вийти</button>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <form id="viewParam" action="">
+                <p>Сортування:</p>
+                <select id="sort">
+                    <option value="none"></option>
+                    <option value="increase">За зростанням ціни</option>
+                    <option value="decrease">За зниженням ціни</option>
+                </select>
+                <div class="separator"></div>
+                <p>Колір:</p>
+                <label><input type="checkbox" name="color" value="black">Чорний</label><br>
+                <label><input type="checkbox" name="color" value="white">Білий</label><br>
+                <label><input type="checkbox" name="color" value="blue">Синій</label><br>
+                <div class="separator"></div>
+                <p>Операційна система:</p>
+                <label><input type="checkbox" name="os" value="android">Android</label><br>
+                <label><input type="checkbox" name="os" value="ios">IOS</label><br>
+                <input class="button button__submit" type="submit" value="Застосувати">
+            </form>
+        </aside>
+        <article>
+            <div class="goods-wrapper"></div>
+            <div class="pages-navigation">
+                <button id="prevPage" class="button">Попередня</button>
+                <p id="numPage"></p>
+                <button id="nextPage" class="button">Наступна</button>
+            </div>
+            <div class="recent-goods-wrapper">
+                <p>Недавно переглянуті:</p>
+                <div class="recent-goods"></div>
+            </div>
+        </article>
+    </main>
+</body>
+</html>

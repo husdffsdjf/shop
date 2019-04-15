@@ -1,0 +1,18 @@
+article {
+    display: flex;
+    width: 100%;
+}
+
+.goods {
+    margin: 1.5em;
+    box-shadow: none;
+    border: 1px solid #ccc;
+}
+
+.desc-wrapper {
+    flex-grow: 1;
+    background: #f7f7f7;
+    border-left: 1px solid #ccc;
+    padding: 1em;
+    box-sizing: border-box;
+}

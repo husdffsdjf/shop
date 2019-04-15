@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Item</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/item.css">
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/item.js" defer></script>
+    <script src="../js/navigation.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><strong>Shop / </strong>Товар</h1>
+        <nav>
+            <button id="toGoods" class="button button__submit">Товари</button>
+            <button id="toCart" class="button button__submit">Кошик</button>
+            <button id="out" class="button button__err">Вийти</button>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section class="goods">
+                <div class="goods-content">
+                    <img class="goods-preview" src="" alt="" />
+                </div>
+                <button class="add-to-cart"></button>
+            </section>
+            <div class="desc-wrapper">
+                <h3 class="title"></h3>
+                <p class="price"></p>
+                <p class="desc"></p>
+            </div>
+        </article>
+    </main>
+</body>
+</html>

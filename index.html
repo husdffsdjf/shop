@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/singin.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><strong>Shop / </strong>Вхід</h1>
+    </header>
+    <main>
+        <article id="form-wrapper">
+            <form id="signin" action="">
+                <p>E-mail:</p>
+                <input id="email" class="text-input" type="email" name="login">
+                <p>Пароль:</p>
+                <input id="password" class="text-input" type="password" name="password">
+                <input type="submit" class="button button__submit" value="Увійти">
+            </form>
+        </article>
+    </main>
+</body>
+</html>
